@@ -32,15 +32,12 @@ const signupController = {
 
          const {email,password} = req.body;
 
-         //hashed the password
-
-         const hashedPassword = await bcrypt.hash(password,10);
 
          //prepare the model
 
         const user = new auth({
             email,
-            password:hashedPassword
+            password
         })
 
         try {
