@@ -1,5 +1,5 @@
 import Joi from "joi"
-import bcrypt from 'bcrypt';
+
 import auth from "../../models/auth.js";
 import CustomErrorHandler from "../../services/CustomErrorHandler.js";
 
